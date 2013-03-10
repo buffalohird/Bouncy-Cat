@@ -1,0 +1,18 @@
+Documentation 
+How to download and compile program
+
+
+First the user must download XCode 4.2 from the Mac App store (free on Mac OS X 10.7.2 Lion / $5 on Mac OS X 10.6.x Snow Leopard). After the program has finished downloading, the user should click Game.xcode.proj. This should be inside the game folder that the user is initially given.  XCode should open automatically when Game.xcode.proj is clicked. Inside XCode, click on the scrolling selection bar next to the run/stop buttons in the top-left of the window (in the toolbar). If the user wants the accelerator to work, it is necessary that the user selects a real registered iPhone or iTouch on the scroll down menu rather than an iOS simulator. Click Run. 
+
+The phone must be connected via USB and be a registered developer device. This can be done by either going to http://developer.apple.com/programs/register/ or following the directions after clicking ‘get started’ or clicking the button asking to register the device when the identity of your phone appears on xCode.  If the device is registered and there are no errors ( we have encountered several xcode 4.2 bugs), the app file should then be sent to the device, and the program should automatically open and run. 
+
+How to play game:
+
+There is an interactive Main menu with a few images and a link to cs50.net (to show why we made this app).  These, however, are all things irrelevant to actual gameplay.
+
+To play the game, click the start button on the main screen. The game screen, which shows a cat, water, and a scenic background, appears. Before the game starts, there will be a set of instructions that are displayed. Click the button underneath the text to start the game. 
+
+At first, the user cannot move, but after the first platform appears and comes into contact with the player, movement is enabled.  These platforms are 'bouncy'. meaning that when the player comes into contact with one, they will be launched upward (using an implemented version of kinetics equations).  The user must move the cat left or right by physically tilting the phone sideways. The user should try to continue to stay on the platforms by tilting the phone back and forth in order to place the cat on another platform. For each platform that passes the screen, the score will increase by a  amount of 10 points multiplied by the number of platforms that have passed so far. 
+
+If the user misses a platform and is not able to “save” themselves by finding another platform the cat will fall into the water. Note, that score is not based on jumps, and therefore does the game allow for the same platform to 'bounce' the player more than once. Lastly, if the user does not move fast enough to another platform and reaches the water, the cat will find itself in the water. When this happens the game will end. A pop up should appear with your score and the message that they've lost.
+

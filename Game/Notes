@@ -1,0 +1,10 @@
+
+//how to programatically link a UIView to a method
+
+    [button addTarget: self action:@selector(go:) forControlEvents: UIControlEventTouchUpInside];
+    
+//how to programatically handle gesture recognition
+
+    UILongPressGestureRecognizer *longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget: self action:@selector("insertMethodHere":)];
+    [self.imageView addGestureRecognizer:longPressGesture];
+    [longPressGesture release];
